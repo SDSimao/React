@@ -1,38 +1,75 @@
-.App {
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.relogio{
+  width: 80%;
+  margin: auto;
+  padding: 10px 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cabecalho{
+  width: 100%;
+  height: 80px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+.titulo-cabecalho{
+  flex: 1;
+  border: 1px solid #000 hidden;
+  margin-left: 10px;
+}
+.titulo-cabecalho h1{
+  font-size: 18pt;
+}
+.navegacao{
+  border: 1px solid #000 hidden;
+  flex: 2;
+}
+.navegacao nav ul{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  list-style: none;
+  padding: 10px 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.navegacao nav ul li{
+  margin-right: 30px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.navegacao nav ul li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 14pt;
+  padding-bottom: 10px;
+}
+.navegacao nav ul li a:hover{
+  border-bottom: 1px solid #000;
+}
+.botao-cadastrar{
+  /* border: 1px solid #000; */
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  margin-right: 20px;
+}
+.botao-cadastrar button{
+  width: 180px;
+  padding: 12px 10px;
+  font-weight: bold;
+  background: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  opacity: 1;
+  transition: opacity 1s;
+}
+@starting-style{
+  .botao-cadastrar button{
+    background: #fb2;
+    opacity: 0;
   }
 }
