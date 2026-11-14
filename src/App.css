@@ -59,7 +59,7 @@
   width: 180px;
   padding: 12px 10px;
   font-weight: bold;
-  background: #000;
+  background: #fb2;
   color: #fff;
   border: none;
   outline: none;
@@ -69,7 +69,8 @@
 }
 @starting-style{
   .botao-cadastrar button{
-    background: #fb2;
+    background: #000;
     opacity: 0;
   }
 }
+
